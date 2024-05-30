@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Navbar</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  /* background-color: #333; */
+  padding: 10px 0;
+  
+}
+
+.container {
+    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: auto 0;
+  padding: 0 50px;
+  height: 61px;
+}
+
+.logo img {
+  width: 86px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  /* margin-left: 50px; */
+}
+
+.nav-links li {
+  padding: 0 15px;
+  color: black;
+
+}
+
+.nav-links li a {
+  color: black;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons i {
+  color: black;
+  margin-left: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.menu-icon{
+display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    
+    /* background-color: #333; */
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  
+  .menu-icon{
+    display: block;
+    color: black;
+    margin-left: 60%;
+  }
+}
+.normal{
+    height: 20px;
+    width: 100%;
+    background-color: #F7F7F7;
+   
+}
+.banner{
+    
+  position: relative;
+  display: inline-block;
+
+}
+.banner img{
+    width: 100%;
+    height: 105%;
+}
+.head-img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-bottom: 8%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 50px;
+  color: #fff;
+  
+}
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+    font-size: 15px;
+    width: 230px;
+    padding: 8px;
+
+    border: 1px solid rgb(26, 25, 25);
+    margin-top: 3%;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .banner img{
+    width: 100%;
+    height: 450px;
+  }
+  .head-img {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  margin-bottom: 10%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 26px;
+  text-align: center;
+  color: #fff;
+ 
+}
+.button {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 7px 15px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+    font-size: 15px;
+    width: 180px;
+    padding: 8px;
+    border: 1px solid rgb(26, 25, 25);
+    
+  cursor: pointer;
+}
+}
+.mahabis{
+    margin-top: 30px;
+    text-align: center;
+}
+.mahabis-head{
+    font-size: 20px;
+    margin: 10px;
+}
+.mahabis .mahabis-para p{
+    
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    color: #222222;
+    font-size: 20px;
+    font-weight: 20px;
+    
+
+}
+.mahabis-btn{
+    
+  padding: 10px 20px;
+  background-color: #222222;
+  color: #fff;
+  border: none;
+    font-size: 18px;
+    width: 230px;
+    padding: 8px;
+    border: 1px solid rgb(26, 25, 25);
+    margin-top: 3%;
+  cursor: pointer;
+}
+
+.col-btn{
+    display: flex;
+    margin-left: 38%;
+       
+}
+.col-head{
+    margin: 18px;
+    bottom: 0;
+    cursor: pointer;
+}
+.collection-card{
+    display: flex;
+    
+}
+.first-card{
+    margin-left: 90px;
+}
+.first-card #img1,#img2,#img3{
+    width: 400px;
+    height: 400px;
+    background: #222222;
+}
+.first-card #name1,#name2,#name3{
+    text-align: start;
+    left: 40px;
+    font-weight: 800; 
+    margin: 10px;
+}
+.first-card #color1,#color2,#color3{
+    text-align: start;
+    left: 40px;
+    font-weight: 200; 
+    margin: 10px;
+}
+.first-card #price1,#price2,#price3{
+    text-align: start;
+    left: 40px;
+    font-weight: 200; 
+    margin: 10px;
+}
+.first-card .discount1 .discount2 .discount3{
+  text-decoration: line-through;
+  color: red;
+}
+@media (max-width: 768px) {
+            .col-btn {
+                margin-left: 0;
+            }
+
+            .collection-card {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .first-card {
+                width: 90%;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .mahabis .mahabis-para p {
+                margin-left: 20px;
+                margin-right: 20px;
+                font-size: 16px;
+            }
+
+            .mahabis-btn {
+                width: 100%;
+                font-size: 16px;
+            }
+
+            .col-head {
+                font-size: 16px;
+                margin: 10px;
+            }
+
+            .first-card {
+                margin: 10px 0;
+            }
+
+            .first-card img {
+                max-width: 100%;
+            }
+
+            .first-card p {
+                font-size: 14px;
+            }
+        }
+
+        /* About Us section styling */
+        .about-section {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .about-header {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .about-content {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #222222;
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 20px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        .social-icons a:hover {
+            color: #dddddd;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            border-top: 1px solid #444444;
+            padding-top: 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <table>
+        <tr heigth="20px">
+            <td class="logo" colspan="2"><img src="i16od.png" alt=""></td>
+            <td class="nav-item"><a href="">New In</a></td>
+            <td class="nav-item"><a href="">New In</a></td>
+            <td class="nav-item"><a href="">New In</a></td>
+            <td class="nav-item"><a href="">New In</a></td>
+            <td class="nav-item"><a href="">New In</a></td>
+            <td class="nav-icon"><a href=""><i class="fa-solid fa-user"></i></a></td>
+            <td class="nav-icon"><i class="fa-solid fa-bag-shopping"></i></td>  
+        </tr>     
+    </table> -->
+
+
+    <nav class="navbar">
+        <div class="container">
+          <div class="logo">
+            <img src="i16od.png" alt="Logo">
+          </div>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars" id="mm"></i>
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#col-home">Services</a></li>
+            <li><a href="#col-home">Portfolio</a></li>
+            <li><a href="#footer">Footer</a></li>
+          </ul>
+          <div class="icons">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+          
+        </div>
+
+      </nav>
+      <!-- color row -->
+     <div class="normal"></div>
+      
+      <!-- home banner -->
+        <div class="home-banner" id="home">
+            <div class="banner">
+                <img src="home-banner-apr24-desktop.webp" alt="">
+                <h1 class="head-img">spring/summer is here</h1>
+                <button class="button">SHOP NOW</button>
+            </div>
+        </div>
+
+
+        <!-- mahbis -->
+
+
+        <div class="mahabis" id="home2">
+            <div class="mahabis-head">
+                <h2>mahabis.</h2>
+            </div>
+            <div class="mahabis-para">
+                <p>Revolutionising footwear through comfort technology and innovative designs.
+                    Experience limitless comfort in our range of hand-made slippers, sandals, and all-day footwear.</p>
+            </div>
+            <div class="mahabis-button">
+                <button class="mahabis-btn">ALL MEN</button>
+                <button class="mahabis-btn">ALL WOMEN</button>
+            </div>
+        </div>
+         <!-- About Us Section -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+          <h2 class="about-header">About Mahabis</h2>
+          <div class="about-content">
+              <p>Welcome to Mahabis, your number one source for stylish and comfortable shoes. We're dedicated to giving you the very best of footwear, with a focus on quality, comfort, and uniqueness.</p>
+              <p>Founded in [Year] by [Founder's Name], Mahabis has come a long way from its beginnings in [Starting Location]. When [Founder's Name] first started out, their passion for creating the perfect shoe drove them to do tons of research, so that Mahabis can offer you the world's most comfortable and stylish shoes. We now serve customers all over [Your Country] and are thrilled that we're able to turn our passion into our own website.</p>
+              <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+              <p>Sincerely,<br>The Mahabis Team</p>
+          </div>
+      </div>
+  </section>
+
+
+        <div class="collection" id="col-heading">
+            <div class="col-btn">
+                <h4 id="colec-1" class="col-head">BEST SELLERS</h4>
+                <h4 id="colec-2" class="col-head">NEW IN
+                    </h4>
+                <h4 id="colec-3" class="col-head">OUTLET</h4>  
+            </div>
+            <hr>
+        </div>
+
+        
+        <div class="collection-card" id="col-home">
+            <div class="first-card">
+                <img id="img1" src="card 1.webp" alt="">
+                <p id="name1">mahabis classic</p>
+                <p id="color1">light grey & skane yellow</p>
+                <p id="price1">Rs.35,000.00 <span class="discount1"></span></p>
+            </div>
+       
+
+       
+            <div class="first-card">
+                <img id="img2" src="card 2.jpg" alt="">
+                <p id="name2">
+                    mahabis curve</p>
+                <p id="color2">dark grey & skienblack</p>
+                <span class="discount2"></span>
+                <p id="price2">Rs.36,000.00</p>
+            </div>
+        
+
+
+       
+            <div class="first-card">
+                <img id="img3" src="card 3.webp" alt="">
+                <p id="name3">mahabis morzine</p>
+                <p id="color3">brown & skienblack</p>
+                <p id="price3">Rs.37,000.00 <span class="discount3"></span></p>
+            </div>
+        </div>
+
+        <footer class="footer" id="footer">
+          <div class="footer-container">
+              <div class="footer-section">
+                  <h4>About Us</h4>
+                  <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                   
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h4>Customer Service</h4>
+                  <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#col-home">Services</a></li>
+                    <li><a href="#col-home">Portfolio</a></li>
+                    <li><a href="#footer">Footer</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h4>Follow Us</h4>
+                  <div class="social-icons">
+                      <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                      <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                      <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                      <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h4>Contact Information</h4>
+                  <ul>
+                      <li>Email: ahadraeez@gmail.com</li>
+                      <li>Phone: +92 3343141928</li>
+                      <li>Address: 123 Mahabis St, City, Country</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              &copy; 2024 Mahabis. All Rights Reserved.
+          </div>
+      </footer>
+  
+      <!-- FontAwesome for social media icons (optional) -->
+      
+      
+      <!-- </div> -->
+      
+    </body>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+  function toggleMenu() {
+  var navLinks = document.getElementById("navLinks");
+  var menuIcon = document.querySelector(".menu-icon i");
+  
+  if (navLinks.style.display === "block") {
+    navLinks.style.display = "none";
+    document.getElementById('home').style.display = '';
+    document.getElementById('home2').style.display = '';
+    document.getElementById('col-home').style.display = '';
+    document.getElementById('col-heading').style.display = '';
+  } else {
+    navLinks.style.display = "block";
+    document.getElementById('home').style.display = 'none';
+    document.getElementById('home2').style.display = 'none';
+    document.getElementById('col-home').style.display = 'none'
+    document.getElementById('col-heading').style.display = 'none';
+  }
+}
+
+//change collection
+    document.getElementById('colec-2').addEventListener('click', function(){
+        document.getElementById('img1').src = "card 4.webp";
+        document.getElementById('name1').innerText = "mahabis solar";
+        document.getElementById('color1').innerText = "peyto blue";
+        document.getElementById('price1').innerText = "38,000.00";
+        
+
+        document.getElementById('img2').src = "card 5.webp";
+        document.getElementById('name2').innerText = "mahabis solar";
+        document.getElementById('color2').innerText = "peyto blue";
+        document.getElementById('price2').innerText = "39,000.00";
+
+        document.getElementById('img3').src = "card 6.webp";
+        document.getElementById('name1').innerText = "mahabis solar";
+        document.getElementById('color1').innerText = "peyto blue";
+        document.getElementById('price1').innerText = "40,000.00";
+    });
+
+
+    document.getElementById('colec-1').addEventListener('click', function(){
+        document.getElementById('img1').src = "card 1.webp";
+        document.getElementById('name1').innerText = "mahabis solar";
+        document.getElementById('color1').innerText = "peyto blue";
+        document.getElementById('price1').innerText = "32,000.00";
+
+        document.getElementById('img2').src = "card 2.jpg";
+        document.getElementById('name2').innerText = "mahabis solar";
+        document.getElementById('color2').innerText = "peyto blue";
+        document.getElementById('price2').innerText = "12,000.00";
+
+        document.getElementById('img3').src = "card 3.webp";
+        document.getElementById('name1').innerText = "mahabis solar";
+        document.getElementById('color1').innerText = "peyto blue";
+        document.getElementById('price1').innerText = "89,000.00";
+    });
+
+   document.getElementById('colec-3').addEventListener('click', function(){
+    document.getElementById('img1').src = "card 7.webp";
+        document.getElementById('name1').innerText = "mahabis solar";
+        document.getElementById('color1').innerText = "peyto blue";
+        document.getElementById('price1').innerText = "32,000.00";
+        document.getElementsByClassName('discount1')[0].innerHTML = "34,000.00";
+        
+
+        document.getElementById('img2').src = "card 8.webp";
+        document.getElementById('name2').innerText = "mahabis solar";
+        document.getElementById('color2').innerText = "peyto blue";
+        document.getElementById('price2').innerText = "12,000.00";
+        document.getElementsByClassName('discount2')[0].innerHTML = "14,000.00";
+
+        document.getElementById('img3').src = "card 9.webp";
+        document.getElementById('name1').innerText = "mahabis solar";
+        document.getElementById('color1').innerText = "peyto blue";
+        document.getElementById('price1').innerText = "89,000.00";
+        document.getElementsByClassName('discount3')[0].innerHTML = "92,000.00";
+   })
+
+
+
+//slider
+/* script.js */
+let currentIndex = 0;
+
+function showSlide(index) {
+    const slides = document.querySelector('.text-slides');
+    const totalSlides = document.querySelectorAll('.text-slide').length;
+
+    if (index >= totalSlides) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else {
+        currentIndex = index;
+    }
+
+    const offset = -currentIndex * 100;
+    slides.style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+// Initial display
+showSlide(currentIndex);
+
+
+</script>
+
+
+</html>
